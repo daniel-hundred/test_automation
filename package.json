@@ -1,0 +1,31 @@
+{
+  "name": "art",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testJavascript": "node prueba.js",
+    "testrequest": "node endpoints/call_request.js",
+    "testscript": "node dbconnections/query1.js",
+    "testBotFlow": "codeceptjs run --steps --grep @MapearFlow",
+    "testBasic": "codeceptjs run --steps --grep @prueba_basica",
+    "testQuizFlow": "codeceptjs run --steps --grep @TestEncuesta --reporter mochawesome",
+    "testQuiz": "codeceptjs run --steps --grep @ActivacionEncuesta --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "Sergio Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^2.0.4",
+    "mocha": "^6.2.2",
+    "mochawesome": "^3.1.2",
+    "puppeteer": "^1.19.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mssql": "^5.1.0",
+    "xlsx": "^0.14.4"
+  }
+}
