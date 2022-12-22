@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "moment": "^2.24.0",
     "mssql": "^5.1.0",
     "xlsx": "^0.14.4"
